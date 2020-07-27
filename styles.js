@@ -21,6 +21,7 @@ const style = `<style>
         letter-spacing: 6px;
         background-color: #6558A3;
         width: 40vw;
+        min-width: 768px;
         height: 65vh;
         text-align: center;
         padding-top: 30px;

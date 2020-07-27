@@ -21,10 +21,13 @@ const title = Title `
     color: #7566BD;
 `
 const character = Character `
-    transform: scale(0.13);
+    width: 15%;
+    padding: 20px;
     ${pathCharacter}
     ${altCharacter}
     `
 
 root.insertAdjacentHTML('beforeend', title)
+root.insertAdjacentHTML('beforeend', character)
+root.insertAdjacentHTML('beforeend', character)
 root.insertAdjacentHTML('beforeend', character)
