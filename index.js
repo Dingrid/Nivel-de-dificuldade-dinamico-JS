@@ -28,15 +28,16 @@ const character = Character `
     ${altCharacter}
     `
 //criacao da barra de dificuldade com arrow function
-const Item = (css, content) => (
+const Item = (css, content= '') => (
     `<li style="${css}">${content}</li>`
 )
 
 const Slide = (css, content) => (
-    `<ul style="${css}">${content}</li>`
+    `<ul style="${css}">${content}</ul>`
 )
 
 const item = Item `
+    list-style: none;
     height: 40px;
     width: 40px;
     background-color: yellow;
