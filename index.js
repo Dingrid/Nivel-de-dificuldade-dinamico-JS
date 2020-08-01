@@ -36,6 +36,20 @@ const Slide = (css, content) => (
     `<ul style="${css}">${content}</ul>`
 )
 
+//adicionando acao nos circulos
+const Action = (css, content='') =>(
+    `<li style="${css}">${content}</li>`
+)
+
+const action = Action `
+    height: 32px;
+    width: 32px;
+    background-color: lightYellow;
+    list-style: none;
+    position: absolute;
+    border-radius: 60%;
+    margin-left: 2.7px;` 
+
 const item = Item `
     list-style: none;
     height: 40px;
@@ -47,14 +61,16 @@ const item = Item `
 const slide = Slide `
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 50%;
     height: 10px;
     background-color: yellow;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 2%;
     justify-content: space-between;
-    ${item + item + item}
+    ${item + item + item + action}
     `
+
+
 
 root.insertAdjacentHTML('beforeend', title)
 root.insertAdjacentHTML('beforeend', character)
