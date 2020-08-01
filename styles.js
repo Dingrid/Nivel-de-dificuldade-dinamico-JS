@@ -11,6 +11,7 @@ const style = `<style>
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-content: column;
         height: 100vh;
         background-color: #26213D;
     }
@@ -23,8 +24,9 @@ const style = `<style>
         width: 40vw;
         min-width: 768px;
         height: 65vh;
+        min-height: 400px;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 30px;  
     }
 </style>`
 
