@@ -29,20 +29,30 @@ const character = Character `
     `
 //criacao da barra de dificuldade com arrow function
 const Item = (css, content) => (
-    `<li style="${css}"> ${content} </li>`
+    `<li style="${css}">${content}</li>`
 )
 
 const Slide = (css, content) => (
-    `<li style="${css}"> ${content} </li>`
+    `<ul style="${css}">${content}</li>`
 )
 
+const item = Item `
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    border-radius: 60%;
+`
+
 const slide = Slide `
+    display: flex;
+    align-items: center;
     width: 60%;
-    height: 10px; 
+    height: 10px;
     background-color: yellow;
     margin-left: 20%;
     margin-top: 2%;
-   ${'teste'}
+    justify-content: space-between;
+    ${item + item + item}
     `
 
 root.insertAdjacentHTML('beforeend', title)
